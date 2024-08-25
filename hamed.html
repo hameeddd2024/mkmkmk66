@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hamed.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="./صور4/الشعار.jpg" alt="">
+    </div>
+    <nav>
+      <ul class="mean">
+        <li><a href="porgrame2.html">اختبارات سابقة</a></li>
+        <li><a href="page4.html">كورسات</a></li>
+        <li><a href="#">Adout</a></li>
+        <li><a href="#">conthaaf</a></li>
+      </ul>
+      <img src="./صور4/1.png" id="toggle" alt="">
+    </nav>
+  </header>
+
+
+
+<h1 class="title">امتحانات سابقة</h1>
+   <div class="content">
+
+    <div class="card">
+        <div class="card-imge">
+          <img src="" alt="">
+        </div>
+        <div class="card-info">
+          <h4 class="card-p">  <span> سمستر اولى</span></h4>
+          <strong class="card-title">
+            <span> <strong></strong> </span>
+            <a href="hamed.html" target="_blank" class="card-lenk">اظغط هنا</a>
+          </strong>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-imge">
+          <img src="" alt="">
+        </div>
+        <div class="card-info">
+          <h4 class="card-p"> <span> سمستر الثاني</span></h4>
+          <strong class="card-title">
+            <span><strong></strong> </span>
+            <a href="hamed.html" class="card-lenk" target="_blank">اظغط هنا</a>
+          </strong>
+        </div>
+      </div>
+
+   </div>
+</body>
+
+<script >
+    
+  const mean = document.querySelector('.mean');
+  const toggle = document.getElementById('toggle');
+  
+  toggle.onclick = function () {
+      mean.classList.toggle('active');
+  }
+  
+  
+  // start img
+  
+  function chanenImg(img) {
+      var singleImg = document.querySelector('#singleImg');
+      singleImg.setAttribute('src', img)
+  }
+  
+  // End img
+  </script>
+</html>
